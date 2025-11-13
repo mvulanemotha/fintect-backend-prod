@@ -16,8 +16,6 @@
 # under the License.
 #
 
-version: "3.8"
-
 services:
   db:
     extends:
@@ -37,3 +35,7 @@ services:
       - ./config/docker/env/fineract.env
       - ./config/docker/env/fineract-common.env
       - ./config/docker/env/fineract-mariadb.env
+
+# ✅ Declare the volume here so Docker knows about it
+volumes:
+  fineract_mariadb_data:
