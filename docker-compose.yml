@@ -19,7 +19,6 @@
 version: "3.8"
 
 services:
-
   db:
     extends:
       file: ./config/docker/compose/mariadb.yml
